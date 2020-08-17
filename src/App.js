@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import EightBall from "./EightBall";
+import answers from "./answers";
 
 function App() {
-  return (
-    <.>
-    </>
-  );
+	return (
+		<>
+			<EightBall answers={answers} />
+		</>
+	);
 }
 
 export default App;
