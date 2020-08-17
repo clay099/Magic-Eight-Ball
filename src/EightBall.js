@@ -5,7 +5,7 @@ const EightBall = (props) => {
 	const [msg, setMsg] = useState("Think of a question");
 	const [color, setColor] = useState("black");
 
-	const handleCLick = () => {
+	const handleClick = () => {
 		let idx = randomIDX();
 		setMsg(props.answers[idx].msg);
 		let c = props.answers[idx].color;
@@ -24,7 +24,7 @@ const EightBall = (props) => {
 
 	return (
 		<>
-			<div className="EightBall" onClick={handleCLick} style={{ backgroundColor: color }}>
+			<div className="EightBall" onClick={handleClick} style={{ backgroundColor: color }}>
 				<h1 className="EightBall-msg">{msg}</h1>
 			</div>
 			<button onClick={resetGame}>Reset</button>
